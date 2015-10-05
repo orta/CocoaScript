@@ -1,11 +1,6 @@
 
 # CocoaScript - Swift scripting made easy
 
-Stop Press:
-
-This Project has now moved [here](https://github.com/RubyNative/CocoaScript)
-to be with the RubyNative project for which it was intended.
-
 When you're as bad a typist as I am, one of the frustrations of using dynamically typed
 scripting languages is when a run time error occurs that could have been picked up 
 by a compiler. Type inference has also reduced the burden coding in a type-safe
@@ -98,9 +93,9 @@ Use a !pod comment in framework import to force updating a particular pod later.
 
 Cocoa script works by setting the framework search path to include the following path:
 
-    ~/Library/CocoaScript/Frameworks/Debug
+    ~/Library/CocoaScript/Frameworks/macosx/Debug
 
-and set the SYMROOT of projects when they build to ~/Library/CocoaScript/Frameworks
+and set the SYMROOT of projects when they build to ~/Library/CocoaScript/Frameworks/macosx
 so they build there. This looks after auto completion in the Xcode editor.
 The `cocoa` binary use a runtime "rpath" the same as this Framework
 search path so cocoa finds the Frameworks at run time.
